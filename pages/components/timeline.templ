@@ -1,0 +1,16 @@
+package components
+
+import "github.com/bakyazi/gotemplresume/dto"
+
+templ Timeline(title string,items []dto.ExperienceItem) {
+    <div class="timeline">
+      <div class="timeline-title">
+        {title}
+      </div>
+      <div class="timeline-items">
+        for _, item := range items {
+            @TimelineItem(item){}
+        }
+      </div>
+    </div>
+}

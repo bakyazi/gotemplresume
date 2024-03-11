@@ -1,0 +1,28 @@
+package pages
+
+templ Base() {
+	<!DOCTYPE html>
+	<html lang="en" data-theme="dark">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta name="google" content="notranslate"/>
+			<link rel="shortcut icon" href="/img/gopher-svgrepo-com.svg" type="image/svg+xml"/>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+			<script src="https://kit.fontawesome.com/43e7c21a59.js" crossorigin="anonymous"></script>
+			<script src="https://cdn.tailwindcss.com"></script>
+			<link rel="stylesheet" href="/resources/output.css"/>
+			<title>Environment Mutex by bakyazi</title>
+			<script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
+			<script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+		</head>
+		<body hx-boost="true" hx-on::before-request="clearErrorNodes();" hx-on::after-request="clearLoader();">
+            @Header(){}
+            <div className="site-container antialiased">
+                {children...}
+            </div>
+		</body>
+
+	</html>
+}

@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .site-container {
+        @apply max-w-2xl mx-auto px-6 font-mono py-24
+    }
+
+    .site-3xl-container {
+        @apply max-w-3xl mx-auto
+    }
+
+    /* headers */
+    .header {
+        @apply fixed w-full right-0 left-0 bg-white top-0 z-50
+    }
+
+    .header-nav {
+        @apply flex justify-between h-12 text-center cursor-pointer
+    }
+
+    .header-item {
+        @apply hover:text-cyan-700 hover:bg-cyan-700 hover:bg-opacity-30 grow rounded-xl flex flex-col justify-center font-mono
+    }
+
+    .item-location {
+        @apply text-cyan-700 font-bold text-xl
+    }
+
+    .item-title {
+        @apply text-cyan-600 text-lg
+    }
+
+    /* icons */
+    .social-container {
+        @apply flex md:flex-row flex-col
+    }
+
+    .social-icons {
+        @apply flex-none flex md:flex-col flex-row md:justify-start justify-center md:space-y-3 md:relative md:before:absolute md:before:h-full md:before:w-px md:before:ease-linear md:before:bg-cyan-700 md:before:bg-opacity-60 md:before:right-0 mx-2 px-4 items-center
+    }
+
+    .social-icon {
+        @apply text-cyan-700 text-2xl hover:bg-cyan-700 hover:bg-opacity-30 w-11 h-11 text-center rounded-full flex flex-col justify-center items-center cursor-pointer
+    }
+
+    .contact-form {
+        @apply flex-auto
+    }
+
+    .contact-form-field {
+        @apply relative my-5
+    }
+
+    .contact-form-label {
+        @apply absolute inline-block bg-white left-5 -top-3 px-2
+    }
+
+    .contact-form-input {
+        @apply border-2 border-solid border-cyan-700 w-full rounded-lg leading-8 pl-2 pt-2
+    }
+
+    .contact-form-button {
+        @apply text-cyan-700 border-2 text-lg rounded-lg px-4 py-2 inline-block
+    }
+
+    .button-icon {
+        @apply mr-2
+    }
+
+    /* Skills */
+    .skills-container {
+        @apply grid grid-cols-3 gap-4 place-content-end pt-4
+    }
+
+    .rate-card {
+        @apply basis-1/3 flex flex-col justify-center
+    }
+
+    .skills-section {
+        @apply pb-5
+    }
+
+
+    /* Timeline */
+    .timeline {
+        @apply pb-3
+    }
+
+    .timeline-title {
+        @apply flex pb-2 relative text-2xl before:absolute before:h-1.5 before:w-1/3 before:ease-linear before:rounded-lg before:bg-cyan-700 before:bottom-0 after:absolute after:h-1.5 after:w-full after:ease-linear after:rounded-lg after:bg-cyan-700 after:bottom-0 after:bg-opacity-60
+    }
+
+    .timeline-items {
+        @apply pt-4
+    }
+
+    .timeline-item {
+        @apply flex relative pl-7 pb-5 md:flex-row flex-col
+    }
+
+    .timeline-item-time {
+        @apply md:w-1/4 w-full relative flex md:flex-col flex-row
+    }
+
+    .timeline-item-time-start, .timeline-item-time-end {
+        @apply md:w-full
+    }
+
+    .timeline-item-time-seperator {
+        @apply md:hidden inline
+    }
+
+    .timeline-item-detail {
+        @apply md:w-3/4 w-full text-justify
+    }
+
+    .timeline-item {
+        @apply before:absolute before:h-full before:w-1 before:ease-linear before:bg-cyan-700 before:bg-opacity-60
+    }
+
+    .timeline-item-time-start {
+        @apply after:absolute after:w-4 after:h-4 after:rounded-full after:bg-cyan-700
+    }
+}
+
+.timeline-item::before {
+    left: calc(8px - 2.5px);
+    top: -1px;
+}
+
+.timeline-item-time-start::after {
+    left: -28px;
+    top: 5px;
+}

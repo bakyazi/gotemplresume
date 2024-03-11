@@ -1,0 +1,156 @@
+{
+    "workExperiences": [
+        {
+            "startDate": "Mar 01, 2023",
+            "endDate": "Present",
+            "header": "Tech Lead",
+            "location": "Picus Security",
+            "description": "I am leading one of the development teams of Picus as a senior backend developer. Making decision on design of Attack Surface Management product. Also developing backend by Golang"
+        },
+        {
+            "startDate": "May 16, 2022",
+            "endDate": "Mar 01, 2023",
+            "header": "Software Engineer",
+            "location": "Picus Security",
+            "description": "Working on modules integrating with SIEM/EDR tools. Developing backend by Go."
+        },
+        {
+            "startDate": "Oct 5, 2020",
+            "endDate": "May 15, 2002",
+            "header": "Software Engineer",
+            "location": "ARGELA Technologies",
+            "description": "Working on multiple projects as a team member. Developing backend in Java (Spring-Boot) and network and telecommunication applications in Java and Python."
+        },
+        {
+            "startDate": "Dec 2, 2019",
+            "endDate": "Oct 5, 2020",
+            "header": "Software Engineer",
+            "location": "STM Defence",
+            "description": "I was working on multiple projects as a team member. I mostly developed frontend applications in ReactJS and VueJS. In addition to these, I was designin AWS DynomoDB structure, API Gateway, and developing AWS Lambda functions for API."
+        },
+        {
+            "startDate": "Jul 2, 2018",
+            "endDate": "Dec 2, 2019",
+            "header": "Software Engineer",
+            "location": "ARGELA Technologies",
+            "description": "Working on multiple projects as a team member. Developing backend and network/telecominication applications in Java (Spring-Boot)"
+        },
+        {
+            "startDate": "Jun 5, 2017",
+            "endDate": "Sep 29, 2017",
+            "header": "Intern Software Engineer",
+            "location": "BOTT",
+            "description": "Working as an intern, I developed desktop client application to communicate with web services in JavaFX."
+        },
+        {
+            "startDate": "Jul 18, 2016",
+            "endDate": "Sep 2, 2016 ",
+            "header": "Intern Software Engineer",
+            "location": "TAI",
+            "description": "Working as an intern, I developed a C++/OpenCV software to recognizing aircrafts and calculate distance."
+        }
+    ],
+    "education": [
+        {
+            "startDate": "Oct 7, 2013",
+            "endDate": "Jun 16, 2018",
+            "department": "Department of Computer Engineering",
+            "location": "Middle East Technical University",
+            "description": "Programming concepts, Data Structures, Algorithms and etc. I love my University because it taught me a lot. METU Rocks!!"
+        },
+        {
+            "startDate": "2009",
+            "endDate": "2013",
+            "department": "Science",
+            "location": "Ümitköy Anatolian High School",
+            "description": "There is nothing to say so much. It was an ordinary school but I have good memories there."
+        }
+    ],
+    "skills": {
+        "programmingLanguages": [
+            {
+                "name": "Golang",
+                "rank": 4.5,
+                "key": "golang"
+            },
+            {
+                "name": "Java",
+                "rank": 4.5,
+                "key": "java"
+            },
+            {
+                "name": "Python",
+                "rank": 4.0,
+                "key": "python"
+            },
+            {
+                "name": "JavaScript",
+                "rank": 3.5,
+                "key": "javascript"
+            }
+        ],
+        "frameworks": [
+            {
+                "name": "Spring",
+                "rank": 3.5,
+                "key": "spring"
+            },
+            {
+                "name": "React",
+                "rank": 3,
+                "key": "react"
+            },
+            {
+                "name": "Vue",
+                "rank": 2,
+                "key": "vue"
+            }
+        ],
+        "operatingSystems": [
+            {
+                "name": "Ubuntu",
+                "rank": 4.5,
+                "key": "ubuntu"
+            },
+            {
+                "name": "CentOS",
+                "rank": 4,
+                "key": "centos"
+            },
+            {
+                "name": "MacOS",
+                "rank": 3.5,
+                "key": "macos"
+            }
+        ],
+        "ciCd": [
+            {
+                "name": "Jenkins",
+                "rank": 3.5,
+                "key": "jenkins"
+            },
+            {
+                "name": "TravisCI",
+                "rank": 2,
+                "key": "travisci"
+            }
+        ],
+        "tools": [
+            {
+                "name": "JIRA",
+                "rank": 5,
+                "key": "jira"
+            },
+            {
+                "name": "Bitbucket",
+                "rank": 5,
+                "key": "bitbucket"
+            },
+            {
+                "name": "GitHub",
+                "rank": 5,
+                "key": "github"
+            }
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+package pages
+
+import "github.com/bakyazi/gotemplresume/dto"
+import "github.com/bakyazi/gotemplresume/pages/components"
+
+templ Skills(r dto.Resume) {
+    @Base(){
+    <div class="site-container">
+        <div class="skills-sections">
+            <div class="skills-section">
+                <label class="text-left text-cyan-700">Programming Languages</label>
+                <div class="skills-container">
+                    for _, pl := range r.Skills.ProgrammingLanguages {
+                        <div class="rate-card">
+                            {pl.Name}
+                            @components.Rating(int(pl.Rank))
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="skills-section">
+                <label class="text-left text-cyan-700">Frameworks</label>
+                <div class="skills-container">
+                    for _, pl := range r.Skills.Frameworks {
+                        <div class="rate-card">
+                            {pl.Name}
+                            @components.Rating(int(pl.Rank))
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="skills-section">
+                <label class="text-left text-cyan-700">Operating Systems</label>
+                <div class="skills-container">
+                    for _, pl := range r.Skills.OperatingSystems {
+                        <div class="rate-card">
+                            {pl.Name}
+                            @components.Rating(int(pl.Rank))
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="skills-section">
+                <label class="text-left text-cyan-700">CI/CD</label>
+                <div class="skills-container">
+                    for _, pl := range r.Skills.CiCd {
+                        <div class="rate-card">
+                            {pl.Name}
+                            @components.Rating(int(pl.Rank))
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="skills-section">
+                <label class="text-left text-cyan-700">Tools</label>
+                <div class="skills-container">
+                    for _, pl := range r.Skills.Tools {
+                        <div class="rate-card">
+                            {pl.Name}
+                            @components.Rating(int(pl.Rank))
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+}
