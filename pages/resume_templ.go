@@ -32,7 +32,7 @@ func Resume(r dto.Resume) templ.Component {
 				templ_7745c5c3_Buffer = templ.GetBuffer()
 				defer templ.ReleaseBuffer(templ_7745c5c3_Buffer)
 			}
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"site-container\"><div class=\"flex justify-end items-center space-x-4\"><a href=\"/resources/cv.pdf\" target=\"_blank\"><div class=\"flex justify-end items-center text-cyan-700 hover:bg-cyan-700 hover:bg-opacity-60 p-1.5 rounded-md hover:text-white\"><label class=\"cursor-pointer\">Download CV</label></div></a></div><div>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"site-container\"><div class=\"flex justify-end items-center space-x-4\"><a href=\"/resources/cv.pdf\" target=\"_blank\"><div class=\"flex justify-end items-center text-cyan-700 hover:bg-cyan-700 hover:bg-opacity-60 p-1.5 rounded-md hover:text-white\"><label class=\"cursor-pointer\"><i class=\"fa-solid fa-download\"></i> Download CV</label></div></a></div><div>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}

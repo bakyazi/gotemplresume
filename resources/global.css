@@ -4,7 +4,7 @@
 
 @layer components {
     .site-container {
-        @apply max-w-2xl mx-auto px-6 font-mono py-24
+        @apply max-w-4xl mx-auto px-6 font-mono py-24
     }
 
     .site-3xl-container {
@@ -67,19 +67,6 @@
 
     .button-icon {
         @apply mr-2
-    }
-
-    /* Skills */
-    .skills-container {
-        @apply grid grid-cols-3 gap-4 place-content-end pt-4
-    }
-
-    .rate-card {
-        @apply basis-1/3 flex flex-col justify-center
-    }
-
-    .skills-section {
-        @apply pb-5
     }
 
 
